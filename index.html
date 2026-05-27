@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Portfolio Mecatrónico</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <button id="navToggle">☰</button>
+
+    <div id="navLinks" class="nav-links">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">Sobre mí</a>
+      <a href="#projects" data-nav="projects">Proyectos</a>
+      <a href="#contact" data-nav="contact">Contacto</a>
+    </div>
+
+    <button id="themeToggle">◑</button>
+    <button id="langToggle">EN</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+      <p id="hero-pre">INGENIERÍA MECATRÓNICA</p>
+
+      <h1>Mariano</h1>
+
+      <p id="hero-desc">
+        Sistemas embebidos, automatización y diseño 3D.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 id="about-title">Sobre mí</h2>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <h2>Proyectos</h2>
+
+    <!-- visor 3D -->
+    <div id="viewer-container"></div>
+
+  </section>
+
+  <!-- TERMINAL -->
+  <section id="lab">
+    <div id="terminal"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <form id="contactForm">
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+  <script src="hero-canvas.js"></script>
+  <script src="renderer.js"></script>
+  <script src="model-viewer.js"></script>
+  <script src="terminal.js"></script>
+  <script src="contact.js"></script>
+
+</body>
+</html>
